@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 50px;
+    z-index: 1000;
+    background: #333;
+}
+
+header .logo {
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+header ul li a:hover {
+    color: #f39c12;
+}
+
+header.sticky {
+    padding: 10px 50px;
+    background: #fff;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('assets/bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+.content, .about-page, .services-page, .portfolio-page, .team-page, .contact-page {
+    padding: 100px 50px;
+    background: #111;
+    color: #fff;
+}
+
+.content h1, .about-page h1, .services-page h1, .portfolio-page h1, .team-page h1, .contact-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content p, .about-page p, .services-page p, .portfolio-page p, .team-page p, .contact-page p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content .highlights, .about-page .mission, .about-page .vision, .about-page .values, .services-page ul, .portfolio-page .portfolio-items, .team-page ul {
+    margin-top: 20px;
+}
+
+.content .highlight-item, .about-page .mission, .about-page .vision, .about-page .values ul li, .services-page ul li, .portfolio-page .portfolio-item, .team-page ul li {
+    margin-bottom: 15px;
+}
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page form label, .contact-page form input, .contact-page form textarea {
+    margin-bottom: 10px;
+}
+
+.contact-page form input, .contact-page form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-page form input[type="submit"] {
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-page form input[type="submit"]:hover {
+    background: #e67e22;
+}
+
+footer {
+    padding: 20px 50px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
